@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; 
+  }
+
+  #loading-container {
+    text-align: center;
+  }
+
+  #loading-icon {
+    display: inline-block; 
+    width: 50px;
+    height: 50px;
+    background-color: red; 
+    animation: loading-animation 3s infinite; 
+  }
+
+  @keyframes loading-animation {
+    0% {
+      transform: rotate(0deg);
+      background-color: red; /* Começa vermelho */
+      border: #141414 4px;
+      width: 50px;
+      height: 50px;
+    }
+    25% {
+        transform: rotate(180deg);
+        background-color: #cf1179 ; 
+        border: #141414 4px;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+      }
+    50% {
+      transform: rotate(360deg);
+      background-color: orange; 
+      border: #141414 4px;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+    75% {
+        transform: rotate(360deg);
+        background-color: #cf1179; 
+        border: #141414 4px;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+  }
+100% {
+  transform: rotate(720deg);
+  background-color: red; 
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid lightblue;
+}
+}
