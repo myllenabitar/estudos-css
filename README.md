@@ -1,4 +1,4 @@
-<h1 align="center">🎨Testes CSS 🎨</h1>
+<h1 align="center">🎨Estudos CSS 🎨</h1>
 
 <h2>Badges:</h2>
 Ultima versão: Novembro 2024.
