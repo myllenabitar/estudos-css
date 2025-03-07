@@ -22,7 +22,7 @@ body {
   @keyframes loading-animation {
     0% {
       transform: rotate(0deg);
-      background-color: red; /* Começa vermelho */
+      background-color: red; 
       border: #141414 4px;
       width: 50px;
       height: 50px;
@@ -48,16 +48,85 @@ body {
         background-color: #cf1179; 
         border: #141414 4px;
         border-radius: 50%;
-        width: 150px;
-        height: 150px;
+        width: 50px;
+        height: 50px;
   }
-100% {
-  transform: rotate(720deg);
-  background-color: red; 
-  width: 0;
-  height: 0;
-  border-left: 40px solid transparent;
-  border-right: 40px solid transparent;
-  border-bottom: 80px solid lightblue;
+    100% {
+        transform: rotate(720deg);
+        background-color: red; 
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 80px solid lightblue;
 }
+}
+
+.grid {
+	display: grid;
+}
+
+.grid-auto-flow-1 {
+	grid-auto-flow: column;
+}
+
+.grid-auto-flow-2 {
+	grid-template-columns: repeat(2, minmax(100px, 1fr));
+	grid-template-rows: 50px 50px;
+	grid-auto-columns: 100px;
+	grid-auto-flow: column;
+}
+
+.grid-auto-rows-2 {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-flow: dense;
+}
+
+.item-2 {
+	grid-column: span 3;
+}
+
+.item-4 {
+	grid-column: span 3;
+}
+
+/* Grid Item */
+.item {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.grid {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+	padding-bottom: 60px;
+	margin: 0px;
+}
+
+body > div {
+	padding: 40px 0;
+}
+
+body > div:nth-of-type(even) {
+	background: rgba(0,0,0,.03);
+}
+
+body > div > img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
 }
